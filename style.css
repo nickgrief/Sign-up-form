@@ -8,16 +8,21 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+em {
+  font-style: italic;
+}
+
 .split {
   display: flex;
   height: 100vh;
 }
 
 .banner {
+  /* flex: 2 0 40%; */
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
   background-image: url(/img/bg_plant.avif);
   background-size: cover;
   color: azure;
@@ -43,10 +48,73 @@ body {
 
 .banner-credit {
   margin: auto auto 1rem auto;
+  font-size: 0.5rem;
 }
 
 .main {
+  /* flex: 3 0 60%; */
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(245, 249, 255);
+}
+
+.main-message {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0px 10vw 16px 32px;
+}
+
+.main-message-middle {
+  margin-bottom: 32px;
+}
+
+.form {
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+  margin: 24px 0px;
+  padding: 12px;
+}
+
+.form-legend {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.form-line {
+  display: flex;
+  margin: 8px 0px;
+  gap: 32px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: rgb(55, 61, 95);
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.button-submit {
+  margin: 0px 0px 24px 32px;
+  width: 128px;
+  height: 32px;
+  background-color: rgb(41, 114, 41);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.main-footer {
+  margin: 0px 0px 0px 32px;
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
 }
