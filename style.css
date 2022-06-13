@@ -126,3 +126,55 @@ table {
 }
 
 /* Reset CSS */
+@font-face {
+  font-family: "OdinFont"; /*a name to be used later*/
+  src: url("/font/Norse-Bold.otf"); /*URL to font*/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.split {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  background-image: url(/img/bg_plant.avif);
+  background-size: cover;
+  color: azure;
+}
+
+.header {
+  display: flex;
+  margin-top: 20vh;
+  height: 18vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  margin: auto 0 auto auto;
+  height: 15vh;
+}
+
+.name {
+  margin: auto auto auto 16px;
+  font-family: "OdinFont";
+  font-size: 4rem;
+}
+
+.footer {
+  margin: auto auto 1rem auto;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
