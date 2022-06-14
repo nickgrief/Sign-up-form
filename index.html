@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
   </head>
 
@@ -34,33 +34,38 @@
           </p>
           <p class="main-message-bottom">You <em>know</em> you want to.</p>
         </div>
-        <form action="POST" class="form">
+        <form id="form" method="post" action="" class="form">
           <fieldset>
             <legend class="form-legend">Let's do this!</legend>
             <div class="form-line">
               <div class="input">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" name="First name" id="first-name" />
+                <input type="text" name="First name" id="first-name" required />
               </div>
               <div class="input">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="Last name" id="last-name" />
+                <input type="text" name="Last name" id="last-name" required />
               </div>
             </div>
             <div class="form-line">
               <div class="input">
                 <label for="email">EMAIL</label>
-                <input type="email" name="EMAIL" id="email" />
+                <input type="email" name="EMAIL" id="email" required />
               </div>
               <div class="input">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="Phone number" id="phone-number" />
+                <input
+                  type="tel"
+                  name="Phone number"
+                  id="phone-number"
+                  required
+                />
               </div>
             </div>
             <div class="form-line">
               <div class="input">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="Password" id="password" />
+                <input type="password" name="Password" id="password" required />
               </div>
               <div class="input">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -68,12 +73,15 @@
                   type="password"
                   name="Confirm password"
                   id="confirm-password"
+                  required
                 />
               </div>
             </div>
           </fieldset>
         </form>
-        <button type="submit" class="button-submit">Create Account</button>
+        <button type="submit" class="button-submit" form="form">
+          Create Account
+        </button>
         <p class="main-footer">
           Already have an account? <a href="">Log in</a>
         </p>
